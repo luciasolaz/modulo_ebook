@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="  ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html5 - listas </title>
+</head>
+<body>
+<header>
+    <h1> Listas HTML </h1>
+</header>
+<section>
+    <p> La lista en HTML nos permite crear conjuntos de elementos en forma de lista dentro de
+        una página, todos los cuales irán precedidos, generalmente, por un guion o número. </p>
+    <p> Los tipos de listas en HTML son los siguientes: </p>
+    <ul>
+        <li>
+            <p><a href="">Listas desordenadas</a></p>
+        </li>
+        <li>
+            <p><a href="#a1" title="más información">Listas ordenadas</a></p>
+        </li>
+        <li>
+            <p><a href="">Listas de definiciones</a></p>
+        </li>
+    </ul>
+    <article id="a1">
+        <h2> Listas Ordenadas </h2>
+        <p>Las listas ordenadas en HTML son aquellas que nos muestran los elementos de la lista
+            en orden. Para representar el orden tendremos los elementos numerados. Es decir, cada
+            uno de los elementos irá precedido de un número o letra que establezca su orden. </p>
+        <p> Las listas ordenadas en HTML se representan mediante el elemento OL. Veamos un
+            ejemplo: </p>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+        <h3> Número de inicio de la lista: start </h3>
+        <p>El atributo <strong> start </strong> nos permite indicar el número por el cual queremos que empiece la
+            lista, ya que por defecto las listas ordenadas en HTML empiezan por el número 1.</p>
+        <ol start="5">
+            <li> Valencia</li>
+            <li>Castellon</li>
+            <li>Alicante</li>
+        </ol>
+        <h3> Tipo de lista ordenada: type </h3>
+        <p>De igual manera podemos indicar el tipo de lista ordenada en HTML que queremos
+            representar.</p>
+        <p>Entre los tipos de listas que podemos representar tenemos:</p>
+        <pre>
+            1 - Listas decimales
+            a - Listas alfabéticas en minúsculas
+            A - Listas alfabéticas en mayúsculas
+            i - Listas de números romanos en minúsculas
+            I - Listas de números romanos en mayúsculas
+        </pre>
+        <p>Veamos un ejemplo </p>
+        <ol type="A">
+            <li>Julio</li>
+            <li>Carmen</li>
+            <li>Ignacio</li>
+            <li>Elena</li>
+        </ol>
+        <h3> Listas en orden inverso: reversed </h3>
+        <p>En HTML 5 aparece el atributo reversed para las listas ordenadas. El atributo reversed
+            nos permite invertir el orden de la lista. Es decir, realiza la numeración de la lista de
+            forma inversa.</p>
+        <p> Para utilizarlo simplemente indicamos el atributo <strong> reversed </strong> sobre el elemento <em> OL</em>
+        </p>
+        <p>Si tenemos la lista:</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Sin atributo reversed</th>
+                <th></th>
+                <th> Con atributo reversed</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <ol>
+                        <li>Julio</li>
+                        <li>Carmen</li>
+                        <li>Ignacio</li>
+                        <li>Elena</li>
+                    </ol>
+                </td>
+                <td></td>
+                <td>
+                    <ol reversed>
+                        <li>Julio</li>
+                        <li>Carmen</li>
+                        <li>Ignacio</li>
+                        <li>Elena</li>
+                    </ol>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+    <article>
+    </article>
+</section>
+</body>
+</html>

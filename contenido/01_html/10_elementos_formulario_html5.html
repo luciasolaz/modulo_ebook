@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elementos nuevos para los formularios en html5</title>
+</head>
+<body>
+<header><h1> Elementos nuevos para los formularios en html5 </h1></header>
+<form id="formulario1" method=post action="">
+    <br/><br/>
+    <label for="id_tiempolocal"> Seleccione fecha y hora (local):</label> <br/>
+    <input type="datetime-local" id="id_tiempolocal" name="tiempolocal"><br/><br/>
+    <label for="id_mes"> Seleccione mes:</label> <br/>
+    <input type="month" id="id_mes" name="mes"> <br/><br/>
+    <label for="id_micolor"> Seleccione color</label><br/>
+    <input type="color" id="id_micolor" name="micolor"> <br/><br/>
+    <label for="id_email"> Teclee email: </label>
+    <input id="id_email" name="email" type="email" placeholder="Teclee su correo electrónico"><br/><br/>
+    <label for="phone"> Escriba su número de teléfono móvil o fijo: </label><br/>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required> <br/>
+    <small>Formato: 123-456-789</small><br/><br/>
+    <label for="id_rangovalores"> Número de billetes: </label> <br/>
+    <input type="range" id="id_rangovalores" min="0" max="10" name="rangovalores" step="1" value="2">
+    <br/>
+    <p> Audio settings:</p>
+    <div>
+        <input type="range" id="volume" name="volume" min="0" max="10">
+        <label for="volume"> Volumen</label>
+    </div>
+    <br/>
+    <label for="id_numeros"> Cantidad de viajeros:</label><br/>
+    <input type="number" id="id_numeros" min="0" max="10" name="numeros" step="1">
+</form>
+
+</body>
+</html>

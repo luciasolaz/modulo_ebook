@@ -1,0 +1,63 @@
+article#ejercicio1 a:link {
+    color: #a40707;
+    text-decoration: none;
+}
+
+article#ejercicio1 a:visited {
+    color: #07a48c;
+}
+
+article#ejercicio1 a:hover {
+    color: #4107a4;
+    text-decoration: underline;
+}
+
+article {
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    border-left: 3px solid #065964;
+    box-shadow: 5px 5px 2px #B7B4B4;
+}
+
+article#ejercicio2 a:link {
+    background-color: darkred;
+    text-decoration: none;
+    padding: .5em;
+    color: white;
+    font-weight: bold;
+}
+
+article#ejercicio2 a:visited {
+    color: #a8d9d1;
+}
+
+a.one:hover {
+    color: #f10505;
+    text-decoration: underline;
+}
+
+a.two:hover {
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+a.three:hover {
+    background-color: #60759a;
+    text-decoration: underline;
+}
+
+a.four:hover {
+    font-family: "Arial Narrow";
+    text-decoration: underline;
+}
+
+a.five:link {
+    text-decoration: none;
+}
+a.five:hover {
+    text-decoration: underline;
+}

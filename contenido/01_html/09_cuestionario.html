@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuestionario de cine</title>
+</head>
+<body>
+<header><h1> Cuestionario de cine </h1></header>
+<form id="cuestionario1" method="post" action="">
+    <fieldset>
+        <legend> Datos personales</legend>
+        <label for="id_nombre">Nombre:</label> <br/>
+        <input id="id_nombre" name="nombre" type="text" placeholder="Escriba su nombre"> <br/>
+        <label for="id_apellido">Apellidos:</label> <br/>
+        <input id="id_apellido" name="apellido" type="text" placeholder="Escriba su apellido aquí"> <br/>
+        <label for="id_dni">DNI:</label> <br/>
+        <input id="id_dni" name="dni" type="text"> <br/>
+        <label for="id_edad">Edad:</label> <br/>
+        <input id="id_edad" name="edad" type="text"> <br/>
+        <label for="id_sexo"> Sexo:</label><br/>
+        <input id="id_sexo" list="sexo" name="sexo">
+        <datalist id="sexo">
+            <option value="Mujer"></option>
+            <option value="Hombre"></option>
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <legend> Mejor película</legend>
+        <input type="radio" id="id_film1" name="película"><label for="id_film1"> El hombre que mató a Liberty
+        Valance </label> <br/>
+        <input type="radio" id="id_film2" name="película"> <label for="id_film2"> Centauros del desierto </label><br/>
+        <input type="radio" id="id_film3" name="película"><label for="id_film3"> Río Rojo </label> <br/>
+    </fieldset>
+    <fieldset>
+        <legend> Mejor película</legend>
+        <input type="checkbox" id="id_film4" name="película"><label for="id_film4"> Río Bravo </label> <br/>
+        <input type="checkbox" id="id_film5" name="película"> <label for="id_film5"> El último tren a Gun
+        Hill </label><br/>
+        <input type="checkbox" id="id_film6" name="película"><label for="id_film6"> Solo ante el peligro </label> <br/>
+        <input type="checkbox" id="id_film7" name="película"><label for="id_film7"> Misión de audaces </label> <br/>
+        <input type="checkbox" id="id_film8" name="película"><label for="id_film8"> El sargento negro </label> <br/>
+    </fieldset>
+<article>
+        <fieldset>
+            <legend> Argumento de tu película preferida</legend>
+            <label for="cuadro"></label>
+            <textarea name="cuadro" id="cuadro" cols="50" rows="10"></textarea>
+        </fieldset>
+</article>
+<br/>
+<input type="reset" value="Borrar formulario">&nbsp;
+<input type="submit" value="Enviar"> &nbsp;
+</form> <br/>
+</body>
+</html>

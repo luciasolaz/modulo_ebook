@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Tratamiento de tablas en html5 </title>
+    <style>
+        h2 {
+            font-weight: bold;
+            color: cornflowerblue;
+        }
+        table {
+            font-family:arial, helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,th {
+            border:1px solid #ddd;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #b6ccf1;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1> Hora de la salida y puesta de sol </h1>
+        <hr>
+        <h2> Valencia, España - Posición del sol en el cielo 9 de febrero de 2013 </h2>
+    </header>
+    <section>
+        <p> Nuestra página web le permite calcular los horarios de salida y la puesta de sol en más de 100.000 lugares
+            de todo el mundo. Además puede calcular las estadísticas correspondientes a la hora exacta de la salida y de
+            la puesta del sol así como del crepúsculo y la posición exacta del sol en el firmamento. Indique aquí abajo
+            el nombre de un sitio especifico y una fecha y obtendrá la tabla y el grafico correspondiente a los horarios
+            de la salida y la puesta de sol para ese año al completo. El cálculo se hace en función de el grado de
+            latitud y longitud del centro geográfico del sitio indicado. </p>
+        <table>
+            <caption> Salida y puesta del sol </caption>
+            <tr>
+                <th></th>
+                <th> Hora: </th>
+                <th> Duración: </th>
+            </tr>
+            <tr>
+                <td> Crepúsculo astronómico </td>
+                <td> 06:29 - 07:01 </td>
+                <td> 31 min.</td>
+            </tr>
+            <tr>
+                <td> Crepúsculo náutico </td>
+                <td> 07:01 - 07:32  </td>
+                <td> 31 min.</td>
+            </tr>
+            <tr>
+                <td> Crepúsculo civil </td>
+                <td> 07:32 - 08:00 </td>
+                <td> 27 min.</td>
+            </tr>
+            <tr>
+                <th> Salida del sol </th>
+                <th> 18:30 </th>
+                <th></th>
+            </tr>
+            <tr>
+                <td> La hora dorada </td>
+                <td> 08:00 - 08:37 </td>
+                <td> 36 min.</td>
+            </tr>
+            <tr>
+                <td> Cenit </td>
+                <td> 13:15 </td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+</main>
+</body>
+
+</html>

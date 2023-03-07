@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lucia Solaz Frasquet"/>
+    <meta name="copyright" content="Lucia Solaz Frasquet"/>
+    <meta name="keywords" content="Lucia Solaz, ensayo, novela"/>
+    <title>Lucia Solaz, autora</title>
+    <style>
+                header {color: #1100ff;text-align:center;}
+    </style>
+</head>
+<body>
+<header><h1> Lucia Solaz Frasquet, autora </h1></header>
+<section>
+    <p> Lucia Solaz Frasquet ha publicado los análisis fílmicos de <em>Pesadilla antes de Navidad</em> y <em> La parada
+        de los monstruos</em> (Nau
+        Llibres/Octaedro), así como numerosas críticas cinematográficas y artículos sobre cine, arte y literatura. Con
+        sinerrata editores ha publicado <em>Entre sombras</em> y la bilogía compuesta por <em> Manuscrito en el
+            tiempo</em> y <em>El
+            retorno de los bardos. </em> Es también autora de las novelas <em>El viento en el agua</em> y <em>Las
+            tormentas intangibles.</em>"
+        Puedes adquirir sus obras directamente rellenando el siguiente <strong>formulario</strong>:<br>
+    </p>
+</section>
+<section>
+    <form id="formulario1" method="post" action="">
+        <fieldset>
+            <legend> Ensayo</legend>
+            <input type="checkbox" id="id_libro1" name="ensayo"><label for="id_libro1"> Pesadilla antes de
+            Navidad </label>
+            <br/>
+            <input type="checkbox" id="id_libro2" name="ensayo"> <label for="id_libro2"> La parada de los
+            monstruos</label><br/>
+        </fieldset>
+        <fieldset>
+            <legend> Novela</legend>
+            <input type="checkbox" id="id_libro3" name="novela"><label for="id_libro3"> <strong>Manuscrito en el
+            tiempo </strong></label>
+            <br/>
+            <input type="radio" id="id_tipo3" name="novela"><label for="id_tipo3"> Papel </label><br/> <input
+                type="radio"
+                id="id_tipo3.1"
+                name="novela"><label
+                for="id_tipo3.1"> Electrónico </label><br/>
+            <input type="checkbox" id="id_libro4" name="novela"> <label for="id_libro4"> <strong>El retorno de los
+            bardos</strong></label><br/>
+            <input type="radio" id="id_tipo4" name="novela"><label for="id_tipo4"> Papel </label><br/> <input
+                type="radio"
+                id="id_tipo4.1"
+                name="novela"><label
+                for="id_tipo4.1"> Electrónico </label><br/>
+            <input type="checkbox" id="id_libro5" name="novela"><label for="id_libro5"> <strong>Entre sombras</strong>
+        </label> <br/>
+            <label for="id_tipo5"></label>
+            <input type="radio" id="id_tipo5" name="novela"><label for="id_tipo4"> Papel </label><br/>
+            <input
+                    type="radio"
+                    id="id_tipo5.1"
+                    name="novela"><label
+                for="id_tipo4.1"> Electrónico </label><br/>
+            <label for="id_libro6"></label>
+            <input type="checkbox" id="id_libro6" name="novela"> <label for="id_libro6"> <strong>El viento en el
+            agua</strong></label><br/>
+
+            <input type="radio" id="id_tipo6" name="novela"><label for="id_tipo6"> Papel </label><br/> <input
+                type="radio"
+                id="id_tipo6.1"
+                name="novela"><label
+                for="id_tipo4.1"> Electrónico </label><br/>
+            <input type="checkbox" id="id_libro7" name="novela"><label for="id_libro7"> <strong>Las tormentas
+            intangibles</strong> </label><br/>
+            <input type="radio" id="id_tipo7" name="novela"><label for="id_tipo7"> Papel </label><br/>
+            <input type="radio" id="id_tipo7.1" name="novela"><label for="id_tipo7.1"> Electrónico </label><br/>
+        </fieldset>
+        <fieldset>
+            <label for="id_pago"> Forma de pago:</label><br/>
+            <input id="id_pago" list="pago" name="pago">
+            <datalist id="pago">
+                <option value="Tarjeta de crédito"></option>
+                <option value="PayPal"></option>
+                <option value="Transferencia bancaria"></option>
+            </datalist>
+            <br/><br/>
+            <fieldset>
+                <legend> Datos personales</legend>
+                <label for="id_nombre">Nombre:</label> <br/>
+                <input id="id_nombre" name="nombre" type="text" placeholder="Escriba su nombre" required> <br/><br/>
+                <label for="id_apellido">Apellidos:</label> <br/>
+                <input id="id_apellido" name="apellido" type="text" placeholder="Escriba su apellido" required>
+                <br/><br/>
+                <label for="id_email"> Email: </label><br/>
+                <input id="id_email" name="email" type="email" placeholder="Escriba su correo electrónico"
+                       required><br/><br/>
+                <label for="phone"> Escriba su número de teléfono móvil o fijo: </label><br/>
+                <input type="tel" id="phone" name="phone" placeholder="Escriba su número de teléfono"> <br/><br/>
+                <legend><strong>Dirección </strong></legend>
+                <label for="id_calle">Calle:</label> <br/>
+                <input id="id_calle" name="calle" type="text" required> <br/><br/>
+                <label for="id_localidad">Localidad y código postal:</label> <br/>
+                <input id="id_localidad" name="localidad" type="text" required> <br/><br/>
+
+                </datalist>
+            </fieldset>
+
+        </fieldset>
+        <article>
+            <fieldset>
+                <legend> Comentarios y sugerencias</legend>
+                <label for="cuadro"></label>
+                <textarea name="cuadro" id="cuadro" cols="50" rows="10"></textarea>
+            </fieldset>
+        </article>
+        <br/>
+        <input type="submit" value="Enviar"> &nbsp;
+        <input type="reset" value="Borrar">&nbsp;
+        <br/> <br/>
+    </form>
+    <a href="https://luciasolazpublicaciones.blogspot.com/" title="Ir a la página web"> Ir a la página web </a>
+</section>
+</body>
+</html>
