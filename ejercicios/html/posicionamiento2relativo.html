@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Posicionamiento2</title>
+
+<style >
+	article{
+		position:relative;
+		font-size:25px;
+		border:2px;
+		border-style:solid;
+		margin:10px;
+		padding:10px;
+		height:100px;
+		width:100px;
+		background-color:white;
+		/* z-index:2; */
+	}
+	article#capa2{
+		bottom:80px;
+		left:80px;
+		/*z-index:1;*/
+	}
+</style>
+</head>
+<body>
+<article>
+	Capa-1
+</article>
+<article id="capa2">
+	Capa-2
+</article>
+<article>
+	Capa-3
+</article>
+</body>
+
+</html>
