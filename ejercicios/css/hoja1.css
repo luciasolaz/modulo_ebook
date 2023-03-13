@@ -51,7 +51,7 @@ a.three:hover {
 }
 
 a.four:hover {
-    font-family: "Arial Narrow";
+    font-family: "Arial Narrow", sans-serif;
     text-decoration: underline;
 }
 
