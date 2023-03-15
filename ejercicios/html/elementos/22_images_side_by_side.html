@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="imagenes/png" href="img/logo_web.png" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="imagenes/png" href="img/logo_web.png"/>
     <title>Images side by side</title>
     <style>
+        .clearfix {
+            clear: both;
+            display: table;
+            /*display: especifica el comportamiento de visualización (el tipo de cuadro de representación) de un elemento. display:table; estos elementos se comportan como elemento html <table>. Define un cuadro de nivel de bloque*/
+        }
 
+        .img-container {
+            float: left;
+            width: 33%;
+            padding: 50px;
+
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /*La propiedad CSS box-sizing nos permite incluir el relleno y el borde en el ancho y alto total de un elemento. border-box: las propiedades width y height incluyen el contenido, relleno y border pero no incluyen el margen.*/
+        * {
+            box-sizing: border-box;
+        }
+/* El pseudo-selector::after inserta algo después del contenido de cada elemento seleccionado. El pseudo-selector::before inserta algo antes del contenido. Utilizamos la propiedad content para especificar el contenido qeu se va a insertar*/
+p.pseudo-elemento::before {content: "Inicio del párrafo (añadido con pseudo-elemento::before)"; color: red;}
+   p.pseudo-elemento::after {content: "- texto añadido con pseudo-elemento::after"; color: #053d94;}
+
+p
     </style>
-  </head>
-  <body>
-    <header>
-      <h1>Images side by side</h1>
-    </header>
-    <section>
-      <p>Float images side by side</p>
-      <div class="clearfix">
+</head>
+<body>
+<header>
+    <h1>Images side by side</h1>
+</header>
+<section>
+    <p>Float images side by side</p>
+    <div class="clearfix">
         <div class="img-container">
-          <img src="../../../img/html/piña.jpg" alt="Italy" style="width: 100%;" />
+            <img src="../../../img/html/piña.jpg" alt="Italy" style="width: 100%;"/>
         </div>
         <div class="img-container">
-          <img src="../../../img/html/paris.jpg" alt="Forest" style="width: 100%;" />
+            <img src="../../../img/html/paris.jpg" alt="Forest" style="width: 100%;"/>
         </div>
         <div class="img-container">
-          <img
-            src="../../../img/html/sol.jpg"
-            alt="Mountains"
-            style="width: 100%;"
-          />
+            <img
+                    src="../../../img/html/sol.jpg"
+                    alt="Mountains"
+                    style="width: 100%;"
+            />
         </div>
-      </div>
-      <p>
+    </div>
+    <p class="pseudo-elemento">
         Note that we also use the clearfix hack to take care of the layout flow,
         and that we add the box-sizing property to make sure that the image
         container doesn't break due to extra padding. Try to remove this code to
         see the effect
-      </p>
-    </section>
-    <footer>
-      <details>
+    </p>
+</section>
+<footer>
+    <details>
         <summary> &copy; Tame Formación</summary>
         <p>Todos los derechos reservados</p>
-      </details>
-     
-    </footer>
-  </body>
+    </details>
+
+</footer>
+</body>
 </html>
