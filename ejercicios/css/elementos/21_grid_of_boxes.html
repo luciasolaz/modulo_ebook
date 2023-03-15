@@ -1,72 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
     <title>Grid of Boxes</title>
     <style>
-    
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>
-        Grid of Boxes
-      </h1>
-    </header>
-    <section>
-      <p>Float boxes side by side</p>
+        .clearfix::after {
+            content: url("../../../img/html/sol.jpg");
+            clear: both;
+            display: table;
+        }
 
-      <article class="clearfix">
-          
+        * {
+            box-sizing: border-box;
+        }
+
+        /* como vamos a usar más de una regla de estilo diferente, usamos comillas y lo separamos con espacio  */
+        .box {
+            float: left;
+            width: 33%;
+            padding: 50px;
+            background-color: #bbb;
+
+        }
+
+        .color1 {
+            background-color: #bbb;
+        }
+
+        .color2 {
+            background-color: #ccc;
+        }
+
+        .color3 {
+            background-color: #ddd;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        figure {
+            border: thin #146767 solid;
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            max-width: 220px;
+            margin: auto;
+        }
+
+        figcaption {
+            background-color: #222;
+            color: #fff;
+            font: italic smaller sans-serif;
+            padding: 3px;
+            text-align: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        Grid of Boxes
+    </h1>
+</header>
+<section>
+    <p>Float boxes side by side</p>
+
+    <article class="clearfix">
+
         <div class="box color1">
-          <p>Some text inside the box</p>
-          <figure>
-            <img src="img/uno.jpg" alt="uno">
-            <figcaption>Imagen 1</figcaption>
-          </figure>
+            <p>Some text inside the box</p>
+            <figure>
+                <img src="../../../img/practica_posicionamiento/rey1.png" alt="uno">
+                <figcaption>Imagen 1</figcaption>
+            </figure>
         </div>
         <div class="box color2">
-          <p>Some text inside the box</p>
-          <figure>
-            <img src="img/dos.jpg" alt="dos">
-            <figcaption>Imagen 2</figcaption>
-          </figure>
+            <p>Some text inside the box</p>
+            <figure>
+                <img src="../../../img/practica_posicionamiento/rey2.png" alt="dos">
+                <figcaption>Imagen 2</figcaption>
+            </figure>
         </div>
         <div class="box color3">
-          <p>Some text inside the box</p>
-          <figure>
-            <img src="img/tres.jpg" alt="tres">
-            <figcaption>Imagen 3</figcaption>
-          </figure>
+            <p>Some text inside the box</p>
+            <figure>
+                <img src="../../../img/practica_posicionamiento/rey3.png" alt="tres">
+                <figcaption>Imagen 3</figcaption>
+            </figure>
         </div>
 
-        </article>
+    </article>
 
-        <p>
-          Note that will aslo use the clearfix hack to take care of the layout
-          flow, and that add the box-sizing property to male sure that the box
-          doesn´t break due to extra padding. Try to remove this code to see the
-          effect.
-        </p>
-        <p>
-          What is box-sizing? you can easily create three floating boxes side by
-          side. However, when you add sometring that enlarges the width of each
-          box (e.g. padding or borders), the box will break. The box-sizing
-          property allows us to include the padding and border in the box´s
-          total width (and height), making sure that the paddingo stays inside
-          of the box and that it does not break.
-        </p>
+    <p>
+        Note that will also use the clearfix hack to take care of the layout
+        flow, and that add the box-sizing property to male sure that the box
+        doesn't break due to extra padding. Try to remove this code to see the
+        effect.
+    </p>
+    <p>
+        What is box-sizing? you can easily create three floating boxes side by
+        side. However, when you add something that enlarges the width of each
+        box (e.g. padding or borders), the box will break. The box-sizing
+        property allows us to include the padding and border in the box´s
+        total width (and height), making sure that the padding stays inside
+        the box and that it does not break.
+    </p>
 
-    </section>
-    <footer>
-      <details>
+</section>
+<footer>
+    <details>
         <summary> &copy; Instituto Tame</summary>
         <p>Todos los derechos reservados</p>
-      </details>
-     
-    </footer>
-  </body>
+    </details>
+
+</footer>
+</body>
 </html>

@@ -25,15 +25,22 @@
             height: auto;
         }
 
-        /*La propiedad CSS box-sizing nos permite incluir el relleno y el borde en el ancho y alto total de un elemento. border-box: las propiedades width y height incluyen el contenido, relleno y border pero no incluyen el margen.*/
+        /*La propiedad CSS box-sizing nos permite incluir el relleno y el borde en el ancho y alto total de un elemento. border-box: las propiedades width y height incluyen el contenido, relleno y border, pero no incluyen el margen.*/
         * {
             box-sizing: border-box;
         }
-/* El pseudo-selector::after inserta algo después del contenido de cada elemento seleccionado. El pseudo-selector::before inserta algo antes del contenido. Utilizamos la propiedad content para especificar el contenido qeu se va a insertar*/
-p.pseudo-elemento::before {content: "Inicio del párrafo (añadido con pseudo-elemento::before)"; color: red;}
-   p.pseudo-elemento::after {content: "- texto añadido con pseudo-elemento::after"; color: #053d94;}
 
-p
+        /* El pseudo-selector::after inserta algo después del contenido de cada elemento seleccionado. El pseudo-selector::before inserta algo antes del contenido. Utilizamos la propiedad content para especificar el contenido qeu se va a insertar*/
+        p.pseudo-elemento::before {
+            content: "Inicio del párrafo (añadido con pseudo-elemento::before)";
+            color: red;
+        }
+
+        p.pseudo-elemento::after {
+            content: "- texto añadido con pseudo-elemento::after";
+            color: #053d94;
+        }
+
     </style>
 </head>
 <body>
@@ -44,16 +51,15 @@ p
     <p>Float images side by side</p>
     <div class="clearfix">
         <div class="img-container">
-            <img src="../../../img/html/piña.jpg" alt="Italy" style="width: 100%;"/>
+            <img src="../../../img/html/piña.jpg" alt="Italy"/>
         </div>
         <div class="img-container">
-            <img src="../../../img/html/paris.jpg" alt="Forest" style="width: 100%;"/>
+            <img src="../../../img/html/paris.jpg" alt="Forest"/>
         </div>
         <div class="img-container">
             <img
                     src="../../../img/html/sol.jpg"
                     alt="Mountains"
-                    style="width: 100%;"
             />
         </div>
     </div>
