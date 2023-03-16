@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>links</title>
+    <style>
+        p::first-line {
+            color: #8f0404;
+            font-variant-caps: all-small-caps;
+        }
+
+        @font-face {
+            font-family: 'Gingerbread_House';
+            src: url("../../../fonts/Gingerbread_House.woff");
+        }
+
+        p.intro::first-letter {
+            font-family: 'Gingerbread_House', sans-serif;
+        }
+
+        p.intro::first-letter {
+            color: #2494ad;
+            font-size: 50px;
+        }
+
+        p.intro_verde::first-letter {
+            color: #065964;
+            font-size: 50px;
+        }
+
+        p.multiple::first-letter {
+            color: red;
+            font-size: 50px;
+        }
+
+        p.multiple::first-line {
+            color: #1100ff;
+        }
+
+        /* el pseudoelemento::selection permite seleccionar o marcar cualquier parte del documento como si fuera un marcador-rotulador. Con la siguiente regla cambia el color y el fondo*/
+        ::selection {
+            color: #4107a4;
+            background: greenyellow;
+        }
+
+        article {
+            border-left: 3px solid #210099;
+            background-color: #FFFFFF;
+            padding-top: 1px;
+            padding-left: 10px;
+            padding-bottom: 1px;
+            width: auto;
+            height: auto;
+            box-shadow: 5px 5px 2px #b7b4b4;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <article>
+        <h3>Primera línea de un párrafo</h3>
+
+        <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more
+            text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+            more, and more, and more.
+            <wbr>
+            You can use the ::first-line pseudo-element to add a special effect to the
+            first line of a text. Some more
+            text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+            more, and more, and more.
+        </p>
+    </article>
+    <br>
+    <article>
+        <h3>Primera letra de un párrafo</h3>
+        <p class="intro">This is an introduction.</p>
+        <p>This is a paragraph with some text. A bit more text even.</p>
+    </article>
+    <article>
+        <h3>Pseudoelementos y clases</h3>
+        <p class="intro_verde"> Mouse over the links and watch them change layout: </p>
+
+    </article>
+    <article>
+        <h3>Pseudoelementos y clases</h3>
+        <p class="multiple">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect
+            to the first letter and the first line of a text!</p>
+
+    </article>
+</section>
+</body>
+</html>

@@ -1,0 +1,10 @@
+article {
+    border-left: 3px solid #007399;
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    width: auto;
+    height: auto;
+    box-shadow: 5px 5px 2px #b7b4b4;
+}
