@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>CSS Responsive Site </title>
+    <style>
+        /*con esto, los cálculos de porcentajes funcionarán*/
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .encabezado {
+            color: #141515;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            background-color: #f1efef;
+            border-radius: 10px;
+            box-shadow: 10px 10px 2px #CCCCCC;
+            font-size: large;
+        }
+
+        section {
+            overflow: auto;
+        }
+
+        ul {
+            list-style: none;
+            margin: 10px;
+            padding: 0;
+            width: 20%;
+            background-color: #e3eaf6;
+            float: left;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 12px 16px;
+            color: #053d94;
+        }
+
+        li a:hover {
+            background-color: #87b2f6;
+            color: #600567;
+            transition: 0.8s;
+        }
+
+        aside {
+            border-radius: 18px 20px;
+            box-shadow: 5px 5px 1px #0877a6;
+            border-color: #4107a4;
+            background-color: #d3ddee;
+            margin: 10px;
+            padding: 12px;
+            width: 20%;
+            height: auto;
+            float: right;
+        }
+
+        article {
+            width: 55%;
+            float: left;
+
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+        }
+
+        /* media se suele poner al final del style. Cada media abre y cierra llaves. Esto es para que la página -incluido el texto- se adapte a los tamaños de las diferentes pantallas y el aside desaparezca en la versión para móvil*/
+
+        aside p {
+            font-size: 1vw;
+        }
+
+        @media only screen and (max-width: 800px) {
+            /*for tablets*/
+            article {
+                width: 80%;
+                padding: 10px;
+            }
+
+            aside {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            /*for mobile phones*/
+            nav, article, aside {
+                width: 100%;
+            }
+            li a {
+                /*padding: 8px;*/
+                text-decoration: underline black;
+                text-align: center;
+            }
+/* si queremos ocultar el aside*/
+            aside {display:none;}
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="encabezado">
+    <h1>Cinque Terre</h1>
+    <h3>Resize the browser window</h3>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href=".#">Home</a></li>
+            <li><a href=".#">News</a></li>
+            <li><a href=".#">Contact</a></li>
+            <li><a href=".#">About</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <article>
+        <h2>The Walk</h2>
+        <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending
+            on the weather conditions and your physical shape.</p>
+        <figure>
+            <img src="../../../img/html/elprincipito.jpg" alt="airfrance">
+        </figure>
+
+    </article>
+
+    <aside>
+        <h2>What?</h2>
+        <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+        <h2>Where?</h2>
+        <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+        <h2>Price?</h2>
+        <p>The Walk is free!</p>
+    </aside>
+</section>
+
+
+<footer> Instituto Tame
+</footer>
+</body>
+</html>

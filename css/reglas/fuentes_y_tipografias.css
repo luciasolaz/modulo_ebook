@@ -1,0 +1,132 @@
+/*  Reglas de CSS para:
+- Tipografias
+- Alineación
+- Espaciados entre lineas, caracteres y palabras
+- Sangria
+- Transformación
+- Sombra: propiedad de CSS3
+ */
+
+.texto_responsive_h1 {
+    font-size: 10vw;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3px 5px blueviolet;
+}
+
+.degradado {
+    background: -webkit-linear-gradient(darkviolet, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.texto_responsive_p {
+    font-size: 5vw;
+    text-align: left;
+    text-indent: 50px;
+}
+
+.texto_tipografia_size {
+    font-size: 1.5em;
+    font-family: verdana, sans-serif;
+    text-align: right;
+}
+
+/* texto en negrita */
+.texto_negrita {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.parrafo_1linea::first-line {
+    text-decoration: line-through red;
+    text-align: justify;
+}
+
+.borde {
+    width: 300px;
+    height: 300px;
+    background-color: lightpink;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px #CCCCCC;
+}
+
+/*ejemplo texto sombreado
+.texto_sombreado {font-size: 48%;
+font-weight: bold;
+text-shadow: 3px 3px #CCCCCC;
+margin: 20px;}*/
+
+.parrafo_columnas {
+    column-count: 3;
+    column-rule: 2px solid #FFFFFF;
+}
+
+.sombreada_y_redondeada {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #5d5858;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px #CCCCCC;
+}
+
+/*texto responsive: Use the "vw" unit when sizing the text. 10 vw will set the size to 10% of the viewport width.
+Viewport is the browser window size. 1vw = 1% of viewport width. if the viewport is 50cm wide, 1vw is 0.5cm.
+ */
+
+/*letter-spacing. letter-space:2px; text-align: left, right, center, justify;*/
+
+/* background-color: se pone en style con asterisco para que sea para todo el documento*/
+
+/* cajas redondeadas: CSS3
+<style>
+article.capa_redondeada {
+width: 300px;
+height: 300px;
+background-color: green;
+border-radius: 20px blue;}
+
+El orden es: Top left, top right, bottom right, bottom left. podemos especificar los valores de forma sencilla y rápida siguiendo ese orden: ej.
+border-radius 5px 6px 7px 8px;
+
+poner borde a una imagen:
+img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
+border-radius: 30px red;}
+
+texto degradado en grises
+.texto_degradado {
+background: -webkit-linear-gradient (black, white);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;}
+
+texto en columna:
+
+.parrafo_columnas {
+column-count: 3;
+column-rule: 2px solid #FFFFFF;}
+
+.sombreada_y_redondeada {
+color: #FFFFFF;
+font-size: 18px;
+padding: 10px;
+margin: 20px;
+background-color: #5d5858;
+border-radius; 20px;
+box-shadow: 10px 10px 2px #CCCCCC;}
+
+.texto_sombreado {font-size: 48px;
+font-weight: bold;
+text-shadow: 3px 3px #CCCCCC;}
+
+
+ */
