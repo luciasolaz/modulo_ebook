@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de tabla avanzada en HTML5</title>
+    <style>
+        h1 {
+            color: rgb(35, 35, 174);
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table caption {
+            font-weight: bold;
+            color: rgb(138, 20, 20);
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tfoot td {
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<header><h1>Movistar S.A - Factura Telefonica</h1></header>
+
+<table>
+    <caption>Factura detallada</caption>
+    <!-- cabecera de la tabla -->
+    <thead>
+    <tr>
+        <th colspan="5">EXTREMEÑA DE TELÉFONOS</th>
+    </tr>
+    </thead>
+    <!-- fin cabecera -->
+
+    <!-- pie de la tabla -->
+    <tfoot>
+    <tr>
+        <td colspan="5"><em>Extremeña de Teléfonos le informa que puede llamar al número gratuito 666 para cualquier
+            duda o sugerencia que tenga acerca de esta factura o de nuestro servicios.</em></td>
+    </tr>
+    </tfoot>
+    <!-- fin pie de la tabla -->
+
+    <!-- cuerpo de la tabla -->
+    <tbody>
+    <tr>
+        <th colspan="5">Detalle de cuotas</th>
+    </tr>
+    <tr>
+        <th>PERIODO</th>
+        <th>CONCEPTO</th>
+        <th>IMPORTE</th>
+        <th colspan="2">DESCUENTO</th>
+    </tr>
+    <tr>
+        <td rowspan="3">01/05/13 - 01/07/13</td>
+        <td>Servicio de identificación de llamadas</td>
+        <td>12 €</td>
+        <td colspan="2">0</td>
+    </tr>
+    <tr>
+        <td>Línea individual</td>
+        <td>14 €</td>
+        <td colspan="2">0</td>
+    </tr>
+    <tr>
+        <td>Bono ciudad</td>
+        <td>10 €</td>
+        <td colspan="2">0</td>
+    </tr>
+    <tr>
+        <td colspan="2">TOTAL:</td>
+        <td colspan="3"><strong>36 €</strong></td>
+    </tr>
+    <tr>
+        <th colspan="5">Detalle de consumos</th>
+    </tr>
+    <tr>
+        <th>CONCEPTO</th>
+        <th>LLAMADAS</th>
+        <th>DURACIÓN</th>
+        <th>IMPORTE</th>
+        <th>DESCUENTO</th>
+    </tr>
+    <tr>
+        <td>Llámada internacional</td>
+        <td>23</td>
+        <td>10m 23s</td>
+        <td>13 €</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Llámada metropolitana</td>
+        <td>23</td>
+        <td>10m 23s</td>
+        <td>3,5 €</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td colspan="2">TOTAL:</td>
+        <td colspan="3"><strong>16, 5€</strong></td>
+    </tr>
+    </tbody>
+    <!-- fin cuerpo de la tabla -->
+</table>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<h1> Ejemplo lista no ordenada</h1>
+<p>Etiquetas estructurales de html5:</p>
+    <ul>
+        <li>Aside</li>
+        <li>Section</li>
+        <li>Article</li>
+        <li>Footer</li>
+        <li>Header</li>
+        <li>Nav</li>
+    </ul>
+    <h1> Ejemplo lista ordenada</h1>
+    <p><u>Instrucciones para actualizar las APP en Android:</u></p>
+    <ol>
+        <li>Ir al grupo de Google</li>
+        <li>Seleccionar PlayStore</li>
+        <li>Buscar la App que deseamos actualizar</li>
+        <li>Seleccionamos la opción <mark><strong>Actualizar</strong></mark> </li>
+    </ol>
+    <h1> Atributo start </h1>
+    <ol start=5>
+        <li>Desayunar</li>
+        <li>Pasear el perro</li>
+        <li>Ir al trabajo</li>
+        <li>Hacer ejercicios</li>
+    </ol>
+    <h1> Código solo con atributo type:, para cambiar el tipo de numeración </h1>
+    <ol type=A6>
+        <li>Desayunar</li>
+        <li>Pasear el perro</li>
+        <li>Ir al trabajo</li>
+        <li>Hacer ejercicios</li>
+    </ol>
+    <h1> Código con atributo type y start:, para cambiar el tipo de numeración y el comienzo de la misma </h1>
+    <ol type=A start=6>
+        <li>Desayunar</li>
+        <li>Pasear el perro</li>
+        <li>Ir al trabajo</li>
+        <li>Hacer ejercicios</li>
+    </ol>
+    <h1> Código con atributo reversed, cambiar el sentido de ordenación</h1>
+    <ol reversed>
+        <li>Desayunar</li>
+        <li>Pasear el perro</li>
+        <li>Ir al trabajo</li>
+        <li>Hacer ejercicios</li>
+    </ol>
+    <h1> Código con atributo reversed y type, cambiar el sentido y tipo de ordenación</h1>
+    <ol type=A reversed>
+        <li>Desayunar</li>
+        <li>Pasear el perro</li>
+        <li>Ir al trabajo</li>
+        <li>Hacer ejercicios</li>
+    </ol>
+    <h1>Código con atributo reversed, start y type, cambiar el sentido y tipo de ordenación y el comienzo de la numeración</h1>
+    <ol type=A start=24 reversed>
+        <li>Desayunar</li>
+        <li>Pasear el perro</li>
+        <li>Ir al trabajo</li>
+        <li>Hacer ejercicios</li>
+    </ol>
+    <h1>Lista de definición</h1>
+    <dl>
+        <dt>Definición 1<dt>
+        <dd>Descripción de la definición 1 .........</dd>
+
+        <dt>Definición 2 <dt>
+        <dd>Descripción de la definición 2 .........</dd>
+    </dl>
+    
+ <dl>
+       <dt><small><strong>HTML:</strong></small><dt>
+        <dd><em><small>Lenguaje de hipertexto y marcado para diseñar websites</small></em>.</dd>
+
+        <dt><small><strong>CSS3:</strong></small><dt>
+                <dd><em><small>Última actualización del estándar de CSS para el diseño de los website</small></em></dd>
+ </dl>
+ 
+ <h1>Lista anidada </h1>
+ <h3>CLASIFICACION DE ANIMALES</h3>
+    <ol>
+        <li>SEGUN SU ESTRUCTURA
+            <ol type=a>
+                <li>Vertebrados
+                    <ul>
+                        <li>Mamiferos</li>
+                        <li>Aves</li>
+                        <li>Peces</li>
+                        <li>Anfibios</li>
+                        <li>Reptiles</li>
+                    </ul>
+                </li>
+                <li>Invertebrados
+                    <ul>
+                        <li>Artrópodos</li>
+                        <li>Equinodermos</li>
+                        <li>Anelidos</li>
+                        <li>Anfibios</li>
+                        <li>Nidarios</li>
+                    </ul>
+                </li>
+            </ol>
+        <li>SEGUN SU ALIMENTACION
+            <ol type=i>
+                <li>Herbiboros
+                    <ul>
+                        <li>Folívoro</li>
+                        <li>Frugívoro</li>
+                        <li>Xilófago</li>
+                        <li>Granívoro</li>
+                        <li>Nectarínoro</li>
+                        <li>Polinívoros</li>
+                    </ul>
+                </li>
+                <li>Carnivoros</li>
+                <li>omnivoros</li>
+            </ol>
+    </ol> 
